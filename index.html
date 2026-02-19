@@ -3,37 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carta Especial</title>
+<title>Carta Inolvidable</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
     margin:0;
     padding:0;
-    background: radial-gradient(circle at top, #120018 0%, #050008 70%, #000 100%);
     font-family:'Playfair Display', serif;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    background: linear-gradient(135deg,#1a0026,#2b0040,#0d001a);
     overflow-x:hidden;
+    color:#f3e6ff;
 }
 
-/* VIDEO SUPERIOR */
+/* ✨ ESTRELLAS SUAVES */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(2px 2px at 70% 60%, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,0.3), transparent),
+        radial-gradient(2px 2px at 90% 20%, rgba(255,255,255,0.3), transparent);
+    animation: twinkle 6s infinite alternate;
+    z-index:-2;
+}
+
+@keyframes twinkle{
+    from{opacity:0.4;}
+    to{opacity:0.9;}
+}
+
+/* 🎥 VIDEO */
 .video-container{
-    margin-top:40px;
+    margin:50px auto 40px auto;
     width:90%;
-    max-width:850px;
+    max-width:900px;
     border-radius:25px;
     overflow:hidden;
-    box-shadow:0 0 40px rgba(120,0,255,0.6);
-    animation: videoGlow 4s infinite alternate;
-}
-
-@keyframes videoGlow{
-    from{box-shadow:0 0 30px rgba(120,0,255,0.4);}
-    to{box-shadow:0 0 65px rgba(180,0,255,1);}
+    box-shadow:0 0 40px rgba(150,0,255,0.7);
 }
 
 iframe{
@@ -42,94 +54,98 @@ iframe{
     border:none;
 }
 
-/* CONTENEDOR CARTA */
+/* 💌 CARTA */
 .carta{
-    margin-top:50px;
-    margin-bottom:80px;
     width:90%;
-    max-width:900px;
-    padding:70px;
+    max-width:950px;
+    margin:auto;
+    margin-bottom:100px;
+    padding:80px;
     border-radius:30px;
-    background:linear-gradient(145deg, rgba(25,0,40,0.95), rgba(10,0,20,0.98));
+    background:rgba(20,0,40,0.85);
+    backdrop-filter: blur(15px);
     position:relative;
-    box-shadow:0 0 70px rgba(150,0,255,0.3);
-    backdrop-filter: blur(12px);
+    box-shadow:0 0 80px rgba(180,0,255,0.4);
 }
 
-/* BORDE FUEGO FURIA NOCTURNA */
+/* 🔥 BORDE FUEGO NOCTURNO */
 .carta::before{
     content:"";
     position:absolute;
-    inset:-4px;
+    inset:-3px;
     border-radius:35px;
     background:linear-gradient(45deg,#3b00ff,#8a00ff,#c300ff,#2a00b3,#ff00f7);
     z-index:-1;
-    filter:blur(18px);
+    filter:blur(20px);
     animation: dragonFire 5s infinite alternate;
 }
 
 @keyframes dragonFire{
     0%{opacity:0.6;filter:blur(15px);}
-    100%{opacity:1;filter:blur(30px);}
+    100%{opacity:1;filter:blur(28px);}
 }
 
-/* TITULO PERSONALIZABLE */
+/* ✨ DETALLE SUPERIOR DECORATIVO */
+.decoracion{
+    text-align:center;
+    font-size:26px;
+    margin-bottom:30px;
+    letter-spacing:5px;
+    opacity:0.6;
+}
+
+/* TITULO */
 .titulo{
     text-align:center;
     font-family:'Cinzel', serif;
-    font-size:42px;
-    color:#e6c8ff;
-    margin-bottom:40px;
-    letter-spacing:2px;
-    text-shadow:0 0 15px #9d00ff, 0 0 35px #5a00ff;
+    font-size:44px;
+    margin-bottom:50px;
+    text-shadow:0 0 15px #9d00ff, 0 0 40px #5a00ff;
 }
 
-/* TEXTO PRINCIPAL */
+/* TEXTO */
 .texto{
-    color:#f5e9ff;
-    font-size:20px;
+    font-size:21px;
     line-height:2;
-    text-align:justify;
     margin-bottom:25px;
+    text-align:justify;
 }
 
-/* NEÓN MORADO INTENSO (el que pediste) */
+/* NEON MORADO */
 .neon-morado{
-    color:#d9b3ff;
+    color:#e0b3ff;
     text-shadow:
         0 0 5px #8a00ff,
         0 0 15px #6a00ff,
         0 0 30px #4d00ff,
         0 0 60px #b300ff,
-        0 0 90px #ff00ff;
+        0 0 100px #ff00ff;
 }
 
 /* FRASE FINAL ROSADA */
 .brillo-rosado{
     text-align:center;
-    font-size:28px;
-    margin-top:60px;
-    color:#ffc6ff;
+    font-size:30px;
+    margin-top:70px;
     text-shadow:
         0 0 10px #ff6bff,
-        0 0 25px #ff00cc,
-        0 0 45px #ff80ff;
+        0 0 30px #ff00cc,
+        0 0 60px #ff80ff;
 }
 
-/* TE AMO MORADO */
+/* TE AMO */
 .te-amo{
     text-align:center;
-    font-size:40px;
+    font-size:42px;
     margin-top:25px;
     font-weight:bold;
-    color:#d9a7ff;
     text-shadow:
         0 0 15px #8a00ff,
-        0 0 35px #5a00ff,
-        0 0 70px #c300ff;
+        0 0 40px #5a00ff,
+        0 0 80px #c300ff;
 }
 
-/* PROMESA DORADA */
+/* PROMESA */
 .promesa{
     text-align:center;
     font-size:26px;
@@ -137,13 +153,14 @@ iframe{
     color:#ffe8a3;
     text-shadow:
         0 0 10px #ffcc33,
-        0 0 25px #ffb700,
-        0 0 50px #ffd700;
+        0 0 30px #ffb700,
+        0 0 60px #ffd700;
 }
 
 @media(max-width:768px){
     iframe{height:250px;}
-    .carta{padding:35px;}
+    .carta{padding:40px;}
+    .titulo{font-size:32px;}
 }
 
 </style>
@@ -151,10 +168,12 @@ iframe{
 <body>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/T8jBwgD6gxI" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/aDCcLQto5BM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 <div class="carta">
+
+    <div class="decoracion">✧･ﾟ: * ✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧</div>
 
     <div class="titulo">MI VIDA ENTERA</div>
 
@@ -165,7 +184,7 @@ Esta noche de miércoles 18 de febrero de 2026, mientras el reloj parece detener
 
 No sé en qué momento exacto te convertiste en mi pensamiento favorito, en mi refugio en medio de la tormenta, en mi debilidad más hermosa y, a la vez, más poderosa. Pero sé que desde que llegaste a mi vida, algo dentro de mí cambió para siempre. Mi corazón, que alguna vez latía con una cadencia monótona, aprendió a latir con más fuerza, como si cada golpe de su tambor resonara con el eco de tu nombre. Mis días, que antes podían parecer grises y monótonos, comenzaron a tener más sentido, llenándose de colores vibrantes, y mis noches, que solían ser oscuras y solitarias, dejaron de serlo porque incluso en la distancia, tú brillas para mí como una estrella que guía mi camino, iluminando los rincones más oscuros de mi alma, llenándome de una luz que nunca pensé que podría existir.
 
-**Eres mi calma y mi tormenta.**  
+<strong>Eres mi calma y mi tormenta.</strong>  
 Eres la brisa suave que acaricia mi rostro en un día caluroso y la lluvia intensa que arrastra mis preocupaciones, como un torrente que limpia todo a su paso. Eres mi paz y mi deseo, el equilibrio perfecto entre lo que anhelo y lo que necesito, la armonía que da sentido a mi vida. Eres la ternura que me envuelve en un abrazo cálido, y la pasión que me incendia, que me consume y me transforma en algo más grande, más fuerte, más vivo, como un fuego que nunca se apaga, que arde intensamente en cada rincón de mi ser, recordándome que el amor verdadero tiene el poder de cambiarlo todo, de hacer que cada día sea una nueva oportunidad para descubrir más sobre ti y sobre nosotros.
 
 Cuando pienso en ti, no es un pensamiento suave ni pequeño. Es un sentimiento intenso, profundo, que me atraviesa el pecho y me recuerda que amar así es un privilegio que pocos tienen la suerte de experimentar. Me encanta tu sonrisa, esa que me desarma sin que te des cuenta, como un rayo de sol que atraviesa las nubes más oscuras, iluminando mi mundo con su calidez. Me encanta tu mirada, porque cuando me miras, siento que me eliges, y yo, sin dudarlo, volvería a elegirte mil veces más, en mil vidas diferentes, en mil universos paralelos donde siempre encontraría la manera de encontrarte, de amarte, de hacerte sentir tan especial como mereces serlo.
@@ -242,7 +261,6 @@ Así que, mientras mis pensamientos fluyen como un río interminable, quiero que
     <div class="promesa">
         "Te prometo ser el faro que ilumina tu camino en las noches más oscuras, el refugio donde siempre encontrarás consuelo y la fuerza que te impulse a seguir adelante.Prometo cuidar de ti con la devoción de un jardinero que nutre su flor más hermosa, regando cada día nuestra relación con amor, respeto y comprensión. En cada desafío que enfrentemos, seré tu compañero inquebrantable, apoyándote y animándote a alcanzar tus sueños, porque tu felicidad es mi misión.Te prometo escuchar cada susurro de tu corazón y entender tus silencios, porque en ellos también hay belleza. Me comprometo a construir un espacio seguro donde puedas ser tú misma, sin miedo a ser juzgada, donde cada risa y cada lágrima sean compartidas, creando un lazo indestructible entre nosotros.Te prometo que en cada paso que demos juntos, mi amor será un escudo que te protegerá de cualquier adversidad, y en cada mirada, encontrarás la certeza de que siempre estaré aquí, a tu lado, como un guardián de nuestro amor eterno.Así que, de hoy en adelante, te elijo cada día, y mi promesa es que, pase lo que pase, siempre seré tu amor, tu mejor amigo, tu lugar seguro y tu protector." 
     </div>
-
 </div>
 
 </body>
