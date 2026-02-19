@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta Especial</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background: radial-gradient(circle at top, #120018 0%, #050008 70%, #000 100%);
+    font-family:'Playfair Display', serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    overflow-x:hidden;
+}
+
+/* VIDEO SUPERIOR */
+.video-container{
+    margin-top:40px;
+    width:90%;
+    max-width:850px;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 0 40px rgba(120,0,255,0.6);
+    animation: videoGlow 4s infinite alternate;
+}
+
+@keyframes videoGlow{
+    from{box-shadow:0 0 30px rgba(120,0,255,0.4);}
+    to{box-shadow:0 0 65px rgba(180,0,255,1);}
+}
+
+iframe{
+    width:100%;
+    height:480px;
+    border:none;
+}
+
+/* CONTENEDOR CARTA */
+.carta{
+    margin-top:50px;
+    margin-bottom:80px;
+    width:90%;
+    max-width:900px;
+    padding:70px;
+    border-radius:30px;
+    background:linear-gradient(145deg, rgba(25,0,40,0.95), rgba(10,0,20,0.98));
+    position:relative;
+    box-shadow:0 0 70px rgba(150,0,255,0.3);
+    backdrop-filter: blur(12px);
+}
+
+/* BORDE FUEGO FURIA NOCTURNA */
+.carta::before{
+    content:"";
+    position:absolute;
+    inset:-4px;
+    border-radius:35px;
+    background:linear-gradient(45deg,#3b00ff,#8a00ff,#c300ff,#2a00b3,#ff00f7);
+    z-index:-1;
+    filter:blur(18px);
+    animation: dragonFire 5s infinite alternate;
+}
+
+@keyframes dragonFire{
+    0%{opacity:0.6;filter:blur(15px);}
+    100%{opacity:1;filter:blur(30px);}
+}
+
+/* TITULO PERSONALIZABLE */
+.titulo{
+    text-align:center;
+    font-family:'Cinzel', serif;
+    font-size:42px;
+    color:#e6c8ff;
+    margin-bottom:40px;
+    letter-spacing:2px;
+    text-shadow:0 0 15px #9d00ff, 0 0 35px #5a00ff;
+}
+
+/* TEXTO PRINCIPAL */
+.texto{
+    color:#f5e9ff;
+    font-size:20px;
+    line-height:2;
+    text-align:justify;
+    margin-bottom:25px;
+}
+
+/* NEÓN MORADO INTENSO (el que pediste) */
+.neon-morado{
+    color:#d9b3ff;
+    text-shadow:
+        0 0 5px #8a00ff,
+        0 0 15px #6a00ff,
+        0 0 30px #4d00ff,
+        0 0 60px #b300ff,
+        0 0 90px #ff00ff;
+}
+
+/* FRASE FINAL ROSADA */
+.brillo-rosado{
+    text-align:center;
+    font-size:28px;
+    margin-top:60px;
+    color:#ffc6ff;
+    text-shadow:
+        0 0 10px #ff6bff,
+        0 0 25px #ff00cc,
+        0 0 45px #ff80ff;
+}
+
+/* TE AMO MORADO */
+.te-amo{
+    text-align:center;
+    font-size:40px;
+    margin-top:25px;
+    font-weight:bold;
+    color:#d9a7ff;
+    text-shadow:
+        0 0 15px #8a00ff,
+        0 0 35px #5a00ff,
+        0 0 70px #c300ff;
+}
+
+/* PROMESA DORADA */
+.promesa{
+    text-align:center;
+    font-size:26px;
+    margin-top:30px;
+    color:#ffe8a3;
+    text-shadow:
+        0 0 10px #ffcc33,
+        0 0 25px #ffb700,
+        0 0 50px #ffd700;
+}
+
+@media(max-width:768px){
+    iframe{height:250px;}
+    .carta{padding:35px;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/T8jBwgD6gxI" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div class="carta">
+
+    <div class="titulo">MI VIDA ENTERA</div>
+
+    <div class="texto">
+        <span class="neon-morado">MI AMOR, PRECIOSA, MI MUJER HERMOSA, MI NIÑA LINDA</span>
+        <br>
+Esta noche de miércoles 18 de febrero de 2026, mientras el reloj parece detenerse y las estrellas titilan en el vasto cielo, quiero que imagines un mundo donde solo existimos tú y yo. Un mundo donde el tiempo se pliega sobre sí mismo y cada segundo se convierte en una eternidad, donde cada susurro de mis pensamientos llega a ti como un suave viento que acaricia tu piel, donde cada latido de mi corazón resuena con la melodía de tu nombre, creando una sinfonía que solo nosotros podemos escuchar. Quiero que sientas cada palabra que te escribo como si mis manos recorrieran tu rostro con la misma delicadeza con la que te pienso cada día, cada hora, cada instante, cada suspiro que se escapa de mis labios al pensar en ti, cada mirada que compartimos, cada risa que resuena en el aire como un eco que nunca se apaga.
+
+No sé en qué momento exacto te convertiste en mi pensamiento favorito, en mi refugio en medio de la tormenta, en mi debilidad más hermosa y, a la vez, más poderosa. Pero sé que desde que llegaste a mi vida, algo dentro de mí cambió para siempre. Mi corazón, que alguna vez latía con una cadencia monótona, aprendió a latir con más fuerza, como si cada golpe de su tambor resonara con el eco de tu nombre. Mis días, que antes podían parecer grises y monótonos, comenzaron a tener más sentido, llenándose de colores vibrantes, y mis noches, que solían ser oscuras y solitarias, dejaron de serlo porque incluso en la distancia, tú brillas para mí como una estrella que guía mi camino, iluminando los rincones más oscuros de mi alma, llenándome de una luz que nunca pensé que podría existir.
+
+**Eres mi calma y mi tormenta.**  
+Eres la brisa suave que acaricia mi rostro en un día caluroso y la lluvia intensa que arrastra mis preocupaciones, como un torrente que limpia todo a su paso. Eres mi paz y mi deseo, el equilibrio perfecto entre lo que anhelo y lo que necesito, la armonía que da sentido a mi vida. Eres la ternura que me envuelve en un abrazo cálido, y la pasión que me incendia, que me consume y me transforma en algo más grande, más fuerte, más vivo, como un fuego que nunca se apaga, que arde intensamente en cada rincón de mi ser, recordándome que el amor verdadero tiene el poder de cambiarlo todo, de hacer que cada día sea una nueva oportunidad para descubrir más sobre ti y sobre nosotros.
+
+Cuando pienso en ti, no es un pensamiento suave ni pequeño. Es un sentimiento intenso, profundo, que me atraviesa el pecho y me recuerda que amar así es un privilegio que pocos tienen la suerte de experimentar. Me encanta tu sonrisa, esa que me desarma sin que te des cuenta, como un rayo de sol que atraviesa las nubes más oscuras, iluminando mi mundo con su calidez. Me encanta tu mirada, porque cuando me miras, siento que me eliges, y yo, sin dudarlo, volvería a elegirte mil veces más, en mil vidas diferentes, en mil universos paralelos donde siempre encontraría la manera de encontrarte, de amarte, de hacerte sentir tan especial como mereces serlo.
+
+Quiero que esta noche sientas cuánto te amo. No un amor tibio, que se apaga al primer soplo del viento. No un amor pasajero, que se desvanece como la niebla al amanecer. Quiero que sientas un amor que arde con la fuerza de mil soles, que protege con la solidez de las montañas, que desea con la intensidad de un océano en tempestad, que cuida con la ternura de un abrazo eterno, que sueña contigo despierto, en cada rincón de mi mente. Un amor que quiere abrazarte hasta que el mundo desaparezca, que quiere besarte lento, disfrutando de cada segundo, y luego sin prisa, dejándonos llevar por la corriente de nuestros deseos, y luego sin control, perdiéndonos el uno en el otro, como dos almas que se encuentran en un baile cósmico, donde solo existe la música de nuestros corazones latiendo al unísono, donde el tiempo se detiene y solo existe el momento presente, el ahora que compartimos.
+
+Eres el sueño que no quiero despertar, la piel que quiero recorrer con paciencia infinita, el nombre que susurro cuando cierro los ojos y me dejo llevar por la magia de nuestra conexión. Si pudiera explicarte lo que provocas en mí cuando me sonríes, cuando me hablas suave, cuando imagino tus manos buscando las mías, entenderías por qué me cuesta tanto mantener la calma. Hay algo en ti que me despierta entero, que me hace querer protegerte y cuidarte, pero también desearte con una intensidad que me deja sin aliento, como si cada vez que te veo, el aire se volviera denso y mágico, envolviéndome en una burbuja de amor que no tiene límites.
+
+Esta noche, quiero que recuerdes algo fundamental: no estás sola en este mundo. Me tienes a mí. Con mis virtudes y mis defectos, con mis luces y sombras. Con mi carácter fuerte y mi ternura vulnerable que solo tú conoces. Me tienes completo, como un rompecabezas que solo tú puedes resolver, cada pieza encajando perfectamente en el lugar que tú has creado en mi corazón. Y si alguna vez dudas, si alguna vez el mundo se pone difícil, quiero que leas esto y sientas mi abrazo atravesando cualquier distancia, como un puente que une nuestras almas, como un hilo que teje nuestro destino en un tapiz de amor eterno. Porque mi amor por ti no depende del momento, ni del clima, ni de la suerte. Depende de lo que siento… y lo que siento por ti es infinito, como el universo que nos rodea, en constante expansión, como un viaje sin final hacia lo desconocido, donde cada día juntos es una nueva aventura.
+
+Te amo con calma cuando te pienso dormida, como un susurro que acaricia el silencio de la noche, llenando el aire de promesas y sueños. Te amo con intensidad cuando imagino tu risa, esa melodía que resuena en mi corazón como una canción que nunca quiero que termine, un eco que reverbera en cada rincón de mi ser. Te amo con pasión cuando mi mente dibuja tu silueta acercándose a la mía, como dos cuerpos que se encuentran en un baile eterno, donde la gravedad no tiene poder sobre nosotros, donde el tiempo se detiene y solo existe el momento presente, el ahora que compartimos. Te amo con locura cuando recuerdo que eres mía… y yo soy tuyo, en un vínculo que trasciende lo físico y se adentra en lo espiritual, donde nuestras almas se entrelazan en un abrazo que no conoce el final, donde el amor se convierte en una fuerza que nos impulsa hacia adelante, sin importar los obstáculos que se presenten en nuestro camino.
+
+Esta noche de miércoles quiero que sientas mi presencia, que cierres los ojos y me imagines abrazándote por la espalda, besando tu cuello despacio, susurrándote que eres la mujer más hermosa que existe para mí. Que no hay nadie que me provoque lo que tú me provocas, que no hay nadie que me inspire lo que tú despiertas en mi alma. Eres mi amor, mi deseo, mi promesa, mi futuro, la razón por la que me levanto cada mañana con una sonrisa en el rostro, la chispa que enciende mi pasión por la vida.
+
+Y si el destino me preguntara qué quiero repetir eternamente… diría tu nombre sin pensarlo, porque eres el latido de mi corazón, la razón de mis días y la luz en mi camino. Gracias por existir, por elegirme, por ser la mujer que hace que mi corazón no solo lata… sino que arda con la fuerza de mil fuegos, un fuego que nunca se extinguirá, que siempre encontrará la manera de avivarse, de crecer, de transformarse en una llama inextinguible que ilumina nuestras vidas.
+
+Te amo más de lo que las palabras pueden contener, más de lo que el lenguaje puede expresar. Y esta noche… más que nunca… te deseo, te abrazo y te elijo, hoy y siempre, en cada rincón de mi ser. Imagina que cada estrella en el cielo es un suspiro mío que viaja hacia ti, cada una de ellas un recordatorio de lo que siento. Cuando miro al cielo, veo tu reflejo en cada constelación, en cada destello de luz que me recuerda que estás ahí, en algún lugar, esperando que nuestras almas se encuentren.
+
+A veces, me pierdo en mis pensamientos, imaginando cómo sería un día perfecto a tu lado. Me veo despertando junto a ti, el sol entrando por la ventana, iluminando tu rostro y haciendo que tus ojos brillen como dos gemas preciosas. Te veo sonriendo, y en ese momento, el mundo se detiene. No hay prisa, no hay preocupaciones, solo nosotros, disfrutando de la calidez de un nuevo día, donde cada rayo de sol es un nuevo comienzo, una nueva oportunidad para amarte aún más profundamente.
+
+Quiero que cada momento que pasemos juntos sea un capítulo de nuestra historia, una historia que nunca termina, que se expande como el universo, llena de aventuras, risas, lágrimas y sueños compartidos. Quiero que cada palabra que intercambiemos sea un hilo que teje nuestro destino, un camino que seguimos juntos, sin importar los obstáculos que se presenten. Eres la melodía que quiero escuchar en cada amanecer, la letra de la canción que quiero cantar al caer la noche, la historia que quiero contar una y otra vez, en un ciclo interminable de amor y devoción.
+
+Así que, mi amor, mientras continúo escribiendo esta carta, quiero que sepas que no hay límites para lo que siento por ti. No hay final en esta historia que hemos comenzado, porque cada día es una nueva página, una nueva oportunidad para explorar el vasto territorio de nuestro amor. Te amo más de lo que puedo expresar, y en cada palabra que escribo, en cada latido de mi corazón, hay un eco de mi devoción por ti que nunca se desvanecerá.
+
+Cada instante que pasa, cada suspiro que compartimos, se convierte en una eternidad en mis pensamientos. Imagino tus risas resonando en el aire, como una melodía que nunca deja de tocarse, un eco que se repite en el tiempo, envolviendo nuestra existencia en un abrazo cálido y eterno. Quiero que sientas cómo mi amor por ti se expande, como un vasto océano que nunca se agota, como un cielo estrellado que se extiende infinitamente, lleno de posibilidades y sueños por cumplir.
+
+Cada día que pasa, mi amor por ti crece y se transforma, como un río que fluye sin cesar, llevándome a lugares que nunca imaginé. Quiero que sepas que cada momento que compartimos es un regalo, una joya preciosa que guardo en lo más profundo de mi corazón. Y mientras continúo escribiendo, quiero que sientas cómo cada palabra es un ladrillo en la construcción de nuestro futuro, un futuro que imagino brillante y lleno de amor, donde siempre encontraremos la manera de superar cualquier desafío, donde siempre habrá espacio para el perdón, la comprensión y la alegría.
+
+Así que, mientras continúo escribiendo, quiero que sepas que este amor que siento por ti es un viaje sin fin, un camino lleno de sorpresas, de momentos inesperados que nos harán reír y llorar, que nos unirán aún más. Te amo con una intensidad que no puedo describir, con una profundidad que trasciende las palabras, y cada día que pasa, mi amor por ti se vuelve más fuerte, más poderoso, como una fuerza de la naturaleza que no puede ser contenida.
+
+Y así, mientras mis pensamientos fluyen como un río interminable, quiero que sepas que en cada latido de mi corazón hay un susurro de amor que te pertenece, un eco de mi devoción que nunca se apagará, que siempre estará presente, guiándome en cada paso del camino. Eres mi todo, mi razón de ser, y en este viaje infinito de amor, no hay límites, no hay finales, solo un horizonte lleno de posibilidades, donde siempre habrá espacio para soñar, para amar, para ser felices juntos.
+
+Cada mirada tuya es un poema que nunca se termina, cada abrazo es un refugio donde el tiempo se detiene y el mundo exterior desaparece. Quiero que sientas cómo mi amor por ti se entrelaza con cada estrella en el cielo, cómo cada amanecer trae consigo la promesa de un nuevo día lleno de amor y esperanza. Te imagino en cada rincón de mi vida, en cada sueño que me atrevo a soñar, en cada deseo que guardo en lo más profundo de mi ser.
+
+Cada palabra que te escribo es un susurro de mi alma, un eco que resuena en la eternidad, un canto a la belleza de lo que compartimos. Quiero que cada día que pase, cada momento que vivamos juntos, sea un testimonio de lo que significa amar y ser amado. Quiero que cada risa compartida, cada lágrima derramada, se conviertan en parte de nuestra historia, una historia que nunca dejará de escribirse, que siempre encontrará nuevas formas de florecer.
+
+Y así, mientras continúo esta carta interminable, quiero que sepas que mi amor por ti es como un río que nunca deja de fluir, que siempre encuentra nuevos caminos, nuevas formas de expresarse, de manifestarse en cada gesto, en cada mirada, en cada palabra. Eres el sol que ilumina mis días, la luna que guía mis noches, la estrella que siempre brilla en mi corazón, un faro en la oscuridad que me muestra el camino de regreso a casa.
+
+Quiero que sepas que cada día que paso contigo es un regalo, una bendición que atesoro con todo mi ser. Te amo más allá de las palabras, más allá de lo que puedo describir. Mi amor por ti es un viaje sin fin, un camino que siempre estará lleno de sorpresas, de momentos mágicos que nos harán reír y llorar, que nos unirán aún más en esta danza hermosa que es la vida. Quiero que cada día sea una nueva aventura, un nuevo capítulo en nuestra historia, donde siempre habrá espacio para el amor, la alegría y la felicidad.
+
+Así que, mientras mis pensamientos fluyen como un río interminable, quiero que sepas que en cada latido de mi corazón hay un susurro de amor que te pertenece, un eco de mi devoción que nunca se apagará, que siempre estará presente, guiándome en cada paso del camino, en cada decisión que tomemos juntos, en cada sueño que compartamos. Eres mi todo, mi razón de ser, y en este viaje infinito de amor, no hay límites, no hay finales, solo un horizonte lleno de posibilidades, donde siempre habrá espacio para soñar, para amar, para ser felices juntos.
+
+Y así, en este viaje sin final, quiero que te sientas segura de que siempre estaré aquí, a tu lado, sosteniéndote, amándote, eligiéndote en cada momento de nuestras vidas. Cada día es una nueva oportunidad para descubrir más sobre ti, para enamorarme de ti una y otra vez, para construir juntos un futuro brillante y lleno de amor. Quiero que cada día que pase sea un recordatorio de lo afortunados que somos de habernos encontrado, de haber creado esta conexión tan profunda y significativa.
+
+Imagina un futuro donde nuestras manos siempre estén entrelazadas, donde nuestros corazones laten al unísono, donde los desafíos se convierten en oportunidades y cada día juntos es una celebración de lo que hemos construido. Quiero que cada momento que pasemos juntos sea un capítulo de nuestra historia, una historia que nunca termina, que se expande como el universo, llena de aventuras, risas, lágrimas y sueños compartidos.
+
+Así que, mi amor, mientras continúo escribiendo esta carta, quiero que sepas que no hay límites para lo que siento por ti. No hay final en esta historia que hemos comenzado, porque cada día es una nueva página, una nueva oportunidad para explorar el vasto territorio de nuestro amor. Te amo más de lo que puedo expresar, y en cada palabra que escribo, en cada latido de mi corazón, hay un eco de mi devoción por ti que nunca se desvanecerá.
+
+Y así, mientras mis pensamientos fluyen como un río interminable, quiero que sepas que en cada latido de mi corazón hay un susurro de amor que te pertenece, un eco de mi devoción que nunca se apagará, que siempre estará presente, guiándome en cada paso del camino. Eres mi todo, mi razón de ser, y en este viaje infinito de amor, no hay límites, no hay finales, solo un horizonte lleno de posibilidades, donde siempre habrá espacio para soñar, para amar, para ser felices juntos.
+
+Así que, mientras continúo escribiendo, quiero que sientas cómo mi amor por ti se expande, como un vasto océano que nunca se agota, como un cielo estrellado que se extiende infinitamente, lleno de posibilidades y sueños por cumplir. Te amo más de lo que las palabras pueden contener, y en cada latido de mi corazón, en cada suspiro que compartimos, hay un eco de mi devoción por ti que nunca se desvanecerá, un amor que se renueva con cada día que pasa, un amor que se transforma y crece, que se adapta y se fortalece, que siempre encontrará nuevas formas de expresarse, de manifestarse en cada gesto, en cada mirada, en cada palabra.
+
+Así que, mi amor, mientras continúo esta carta interminable, quiero que sepas que mi amor por ti es un viaje sin fin, un camino lleno de sorpresas, de momentos inesperados que nos harán reír y llorar, que nos unirán aún más. Te amo con una intensidad que no puedo describir, con una profundidad que trasciende las palabras, y cada día que pasa, mi amor por ti se vuelve más fuerte, más poderoso, como una fuerza de la naturaleza que no puede ser contenida.
+
+Y así, mientras mis pensamientos fluyen como un río interminable, quiero que sepas que en cada latido de mi corazón hay un susurro de amor que te pertenece, un eco de mi devoción que nunca se apagará, que siempre estará presente, guiándome en cada paso del camino. Eres mi todo, mi razón de ser, y en este viaje infinito de amor, no hay límites, no hay finales, solo un horizonte lleno de posibilidades, donde siempre habrá espacio para soñar, para amar, para ser felices juntos, donde cada día será una nueva oportunidad para descubrir la belleza de nuestro amor, para explorar las profundidades de nuestros corazones y para celebrar la conexión única que compartimos.
+
+Y así, mientras continúo escribiendo esta carta, quiero que sepas que mi amor por ti es como un río que nunca deja de fluir, que siempre encuentra nuevos caminos, nuevas formas de expresarse, de manifestarse en cada gesto, en cada mirada, en cada palabra. Eres el sol que ilumina mis días, la luna que guía mis noches, la estrella que siempre brilla en mi corazón, un faro en la oscuridad que me muestra el camino de regreso a casa.
+
+Quiero que sepas que cada día que paso contigo es un regalo, una bendición que atesoro con todo mi ser. Te amo más allá de las palabras, más allá de lo que puedo describir. Mi amor por ti es un viaje sin fin, un camino que siempre estará lleno de sorpresas, de momentos mágicos que nos harán reír y llorar, que nos unirán aún más en esta danza hermosa que es la vida. Quiero que cada día sea una nueva aventura, un nuevo capítulo en nuestra historia, donde siempre habrá espacio para el amor, la alegría y la felicidad.
+
+Así que, mientras mis pensamientos fluyen como un río interminable, quiero que sepas que en cada latido de mi corazón hay un susurro de amor que te pertenece, un eco de mi devoción que nunca se apagará, que siempre estará presente, guiándome en cada paso del camino, en cada decisión que tomemos juntos, en cada sueño que compartamos. Eres mi todo, mi razón de ser, y en este viaje infinito de amor, no hay límites, no hay finales, solo un horizonte lleno de posibilidades, donde siempre habrá espacio para soñar, para amar, para ser felices juntos.
+<br>
+    </div>
+
+    <div class="brillo-rosado">
+        "Cada vez que sonríes, el mundo se detiene y me pierdo en la magia de tu mirada; cada vez que me miras, mi corazón se enciende como un faro en la noche, guiándome hacia ti.Cada vez que ríes, el tiempo se olvida y el universo entero parece celebrar nuestra conexión; cada vez que estás cerca, mi vida cobra sentido, como si cada estrella del cielo hubiera sido colocada allí solo para iluminar nuestro camino.Cada momento contigo es un susurro eterno de amor, y cada día que pasa, descubro nuevas razones para amarte más. Eres mi sueño hecho realidad, y en cada latido, siempre serás tú, mi única y eterna razón de ser."
+    </div>
+
+    <div class="te-amo">
+        <strong>"Te amo con la intensidad de mil amaneceres, cada uno trayendo consigo la promesa de un nuevo día a tu lado. Te amo como el río ama al mar, fluyendo sin cesar hacia ti, sin importar la distancia o el tiempo.Te amo en cada susurro del viento que acaricia tu piel, en cada rayo de sol que ilumina tu sonrisa, y en cada estrella que brilla en la noche, recordándome que eres un regalo del universo.Te amo no solo por lo que eres, sino por lo que soy cuando estoy contigo; en tu presencia, encuentro la paz que siempre busqué y la alegría que llena mi corazón.Eres mi refugio, mi inspiración y mi razón para soñar. En cada latido, en cada respiración, mi amor por ti crece, y en cada instante, te elijo una y otra vez. Te amo, hoy y siempre, con un amor que trasciende el tiempo y el espacio."</strong>
+      <p><strong>TE AMO MUCHÍSIMO VALERIA ISABEL PETRO VILLAZÓN, MI NIÑA LINDA</strong></p>
+    </div>
+
+    <div class="promesa">
+        "Te prometo ser el faro que ilumina tu camino en las noches más oscuras, el refugio donde siempre encontrarás consuelo y la fuerza que te impulse a seguir adelante.Prometo cuidar de ti con la devoción de un jardinero que nutre su flor más hermosa, regando cada día nuestra relación con amor, respeto y comprensión. En cada desafío que enfrentemos, seré tu compañero inquebrantable, apoyándote y animándote a alcanzar tus sueños, porque tu felicidad es mi misión.Te prometo escuchar cada susurro de tu corazón y entender tus silencios, porque en ellos también hay belleza. Me comprometo a construir un espacio seguro donde puedas ser tú misma, sin miedo a ser juzgada, donde cada risa y cada lágrima sean compartidas, creando un lazo indestructible entre nosotros.Te prometo que en cada paso que demos juntos, mi amor será un escudo que te protegerá de cualquier adversidad, y en cada mirada, encontrarás la certeza de que siempre estaré aquí, a tu lado, como un guardián de nuestro amor eterno.Así que, de hoy en adelante, te elijo cada día, y mi promesa es que, pase lo que pase, siempre seré tu amor, tu mejor amigo, tu lugar seguro y tu protector." 
+    </div>
+
+</div>
+
+</body>
+</html>
